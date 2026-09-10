@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - The Venue</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Great+Vibes&family=MonteCarlo&family=Poppins:wght@300;400;500;600;700&family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="pro.css">
+  <link rel="stylesheet" href="stayle contact.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="home.html">
+        The Venue
+        <span class="brand-sub"><i>R</i><i>E</i><i>S</i><i>T</i><i>A</i><i>U</i><i>R</i><i>A</i><i>N</i><i>T</i></span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">MENU</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">BLOG</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">CONTACT</a></li>
+        </ul>
+
+        <a href="tel:+34586778892" class="btn btn-outline-reservation ms-lg-3">
+          Reservations: +34 586 778 8892
+        </a>
+        <a href="javascript:void(0)" class="cart ms-lg-3" onclick="openCart()">
+          🛒 <span id="cartCount">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="contact-hero">
+    <div class="hero-content">
+      <p>The Venue</p>
+      <h1>Contact</h1>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-left">
+        <div class="contact-text-box">
+          <h2 class="contact-heading">Contact info</h2>
+          <p class="contact-paragraph">
+            Have a question, special dining request, or planning a private event? We’d love to hear from you. Reach out via phone, email, or stop by in person—our team is always here to make your experience exceptional.
+          </p>
+        </div>
+
+        <div class="contact-brand">
+          <h2>The Venue</h2>
+          <span>R E S T A U R A N T</span>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <div class="contact-card-box">
+          <div class="info-row">
+            <span class="info-label">Address</span>
+            <span class="info-val">481 Creekside Lane Avila CA 93424</span>
+          </div>
+
+          <div class="info-row">
+            <span class="info-label">Phone</span>
+            <span class="info-val">+53 345 7953 32453</span>
+          </div>
+
+          <div class="info-row">
+            <span class="info-label">E-mail</span>
+            <span class="info-val">yourmail@gmail.com</span>
+          </div>
+
+          <div class="contact-socials">
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-solid fa-globe"></i></a>
+            <a href="#"><i class="fa-brands fa-behance"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-form-section">
+    <div class="form-container">
+      <div class="form-header">
+        <span class="chefs-subtitle">Say hello</span>
+        <h2 class="contact-heading">Send Us a Message</h2>
+      </div>
+
+      <form class="venue-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <input type="text" id="contactName" placeholder="Your Name">
+          <input type="email" id="contactEmail" placeholder="Your Email">
+          <input type="text" id="contactSubject" placeholder="Subject">
+        </div>
+
+        <div class="form-row">
+          <textarea id="contactMessage" placeholder="Write your message here..." rows="6"></textarea>
+        </div>
+
+        <div class="form-btn-box">
+          <button type="submit" class="chef-btn form-submit">SEND MESSAGE</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="map-section">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d113525.46848972085!2d33.829963299999996!3d27.229480799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1788726163855!5m2!1sen!2seg" 
+      width="100%" 
+      height="450" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="strict-origin-when-cross-origin"
+      class="google-map">
+    </iframe>
+  </section>
+
+  <!-- ================= RESERVATION ================= -->
+  <section class="reservation" id="resSection">
+      <div class="reservation-overlay">
+          <h2>Make a Reservation</h2>
+
+          <form id="reservationForm" novalidate>
+              <div class="reservation-fields">
+                  <div class="field">
+                      <label for="date">Date</label>
+                      <input type="date" id="date">
+                  </div>
+                  <div class="field">
+                      <label for="time">Time</label>
+                      <input type="time" id="time">
+                  </div>
+                  <div class="field">
+                      <label for="guests">Guests</label>
+                      <select id="guests">
+                          <option value="">Select Guests</option>
+                          <option value="1 Person">1 Person</option>
+                          <option value="2 Persons" selected>2 Persons</option>
+                          <option value="3 Persons">3 Persons</option>
+                          <option value="4 Persons">4 Persons</option>
+                          <option value="5 Persons">5 Persons</option>
+                          <option value="6+ Persons">6+ Persons</option>
+                      </select>
+                  </div>
+              </div>
+
+              <button type="submit" class="reserve-btn">Book a Table</button>
+          </form>
+      </div>
+  </section>
+
+  <!-- ================= RESERVATION POPUP ================= -->
+  <div class="reservation-popup" id="reservationPopup">
+      <div class="reservation-popup-box">
+          <button class="close-reservation" onclick="closeReservation()">&times;</button>
+          <div class="success-icon">&#10003;</div>
+          <h2>Reservation Confirmed!</h2>
+          <p>Thank you for choosing The Venue. We look forward to serving you.</p>
+          <div class="reservation-details">
+              <p><strong>Date:</strong> <span id="confirmedDate">-</span></p>
+              <p><strong>Time:</strong> <span id="confirmedTime">-</span></p>
+              <p><strong>Guests:</strong> <span id="confirmedGuests">-</span></p>
+          </div>
+          <button class="reservation-ok" onclick="closeReservation()">OK</button>
+      </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+      <div class="container">
+          <div class="row">
+
+              <!-- Footer Logo & Copyright -->
+              <div class="col-lg-3 col-md-6 footer_col">
+                  <div class="footer_logo">
+                      <div class="footer_logo_title">The Venue</div>
+                      <div class="footer_logo_subtitle">
+                          <i>R</i><i>E</i><i>S</i><i>T</i><i>A</i><i>U</i><i>R</i><i>A</i><i>N</i><i>T</i>
+                      </div>
+                  </div>
+                  <div class="copyright">
+                      <p>Copyright &copy; <span id="year"></span> All rights reserved | This template is made by
+                          <a href="#">our team</a>
+                      </p>
+                  </div>
+              </div>
+
+              <!-- Footer About -->
+              <div class="col-lg-6 col-md-6 footer_col">
+                  <div class="footer_about">
+                      <p>At The Venue, every meal is an opportunity to gather, connect, and savor exceptional food made with locally sourced produce. Whether it’s an intimate dinner or a weekend celebration, we look forward to welcoming you to our table.</p>
+                  </div>
+              </div>
+
+              <!-- Footer Contact -->
+              <div class="col-lg-3 col-md-12 footer_col">
+                  <div class="footer_contact">
+                      <ul>
+                          <li>
+                              <div class="footer_contact_title">Address:</div>
+                              <div class="footer_contact_text">481 Creekside Lane Avila CA 93424</div>
+                          </li>
+                          <li>
+                              <div class="footer_contact_title">Phone:</div>
+                              <div class="footer_contact_text">+53 345 7953 32453</div>
+                          </li>
+                          <li>
+                              <div class="footer_contact_title">Email:</div>
+                              <div class="footer_contact_text">yourmail@gmail.com</div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </footer>
+
+  <!-- ================= CART POPUP ================= -->
+  <div id="cart" class="cart-popup">
+      <div class="cart-container">
+          <button class="close-cart" onclick="closeCart()">×</button>
+          <h2>Shopping Cart</h2>
+          <div id="cartItems"></div>
+          <div class="cart-total">
+              <strong>Total: $<span id="cartTotal">0</span></strong>
+          </div>
+          <button class="checkout-btn" onclick="checkout()">Checkout</button>
+      </div>
+  </div>
+
+  <!-- ================= JAVASCRIPT ================= -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="navbar.js"></script>
+  <script src="menu.js"></script>
+
+</body>
+</html>

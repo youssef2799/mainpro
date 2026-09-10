@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - The Venue Restaurant</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Great+Vibes&family=MonteCarlo&family=Poppins:wght@400;500;600;700&family=PT+Sans+Narrow:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="pro.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">
+                The Venue
+                <span
+                    class="brand-sub"><i>R</i><i>E</i><i>S</i><i>T</i><i>A</i><i>U</i><i>R</i><i>A</i><i>N</i><i>T</i></span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="menu.html">MENU</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">BLOG</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                </ul>
+
+                <a href="tel:+34586778892" class="btn btn-outline-reservation ms-lg-3">
+                    Reservations: +34 586 778 8892
+                </a>
+                <a href="javascript:void(0)" class="cart ms-lg-3" onclick="openCart()">
+                    🛒 <span id="cartCount">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="super_container">
+
+        <!-- ================= HERO ================= -->
+        <section class="menu-hero">
+            <div class="hero-content">
+                <p>The Venue</p>
+                <h1>The Menu</h1>
+            </div>
+        </section>
+
+        <!-- ================= DISCOVER MENU ================= -->
+        <section class="discover">
+            <p class="small-title">Something new</p>
+            <h2>Discover Our Menu</h2>
+            <div class="discover-text">
+                <p>
+                    We prepare delicious meals using fresh ingredients
+                    and carefully selected recipes. Discover our menu
+                    and enjoy a wonderful dining experience.
+                </p>
+                <p>
+                    From starters to main dishes and delicious desserts,
+                    we have something special for everyone.
+                </p>
+            </div>
+        </section>
+
+        <!-- ================= MENU CATEGORIES ================= -->
+        <section class="categories">
+
+            <!-- STARTERS -->
+            <div class="category">
+                <img src="images/starters.jpg" alt="Starters">
+                <div class="category-content">
+                    <h2>Starters</h2>
+
+                    <div class="food">
+                        <div>
+                            <h3>Garlic Shrimp</h3>
+                            <p>Fresh shrimp with garlic and herbs</p>
+                        </div>
+                        <strong>$17</strong>
+                        <button class="order-btn" onclick="addToCart('Garlic Shrimp', 17)">Order Now</button>
+                    </div>
+
+                    <div class="food">
+                        <div>
+                            <h3>Calamari</h3>
+                            <p>Crispy calamari with special sauce</p>
+                        </div>
+                        <strong>$15</strong>
+                        <button class="order-btn" onclick="addToCart('Calamari', 15)">Order Now</button>
+                    </div>
+
+                    <div class="food">
+                        <div>
+                            <h3>Seafood Soup</h3>
+                            <p>Fresh seafood in a creamy soup</p>
+                        </div>
+                        <strong>$18</strong>
+
+                    <button
+                        class="order-btn"
+                        onclick="addToCart('Seafood Soup', 18)">
+                        Order Now
+                    </button>
+
+                </div>
+
+
+                <div class="food">
+
+                    <div>
+                        <h3>Fish Bites</h3>
+                        <p>Crispy fresh fish bites</p>
+                    </div>
+
+                    <strong>$16</strong>
+
+                    <button
+                        class="order-btn"
+                        onclick="addToCart('Fish Bites', 16)">
+                        Order Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- MAIN -->
+
+        <div class="category">
+
+            <img src="images/main.jpg" alt="Main Dishes">
+
+            <div class="category-content">
+
+                <h2>Main</h2>
+
+                <div class="food">
+
+                    <div>
+                        <h3>Grilled Salmon</h3>
+                        <p>Fresh salmon with vegetables</p>
+                    </div>
+
+                    <strong>$25</strong>
+
+                    <button
+                        class="order-btn"
+                        onclick="addToCart('Grilled Salmon', 25)">
+                        Order Now
+                    </button>
+
+                </div>
+
+
+                <div class="food">
+
+                    <div>
+                        <h3>Grilled Fish</h3>
+                        <p>Fresh fish with lemon and herbs</p>
+                    </div>
+
+                    <strong>$22</strong>
+
+                    <button
+                        class="order-btn"
+                        onclick="addToCart('Grilled Fish', 22)">
+                        Order Now
+                    </button>
+
+                </div>
+
+
+                <div class="food">
+
+                    <div>
+                        <h3>Seafood Pasta</h3>
+                        <p>Pasta with shrimp and fresh seafood</p>
+                    </div>
+
+                    <strong>$23</strong>
+
+                    <button
+                        class="order-btn"
+                        onclick="addToCart('Seafood Pasta', 23)">
+                        Order Now
+                    </button>
+
+                </div>
+
+
+                <div class="food">
+
+                    <div>
+                        <h3>Fish Steak</h3>
+                        <p>Premium fish steak with vegetables</p>
+                    </div>
+
+                    <strong>$27</strong>
+
+                    <button
+                        class="order-btn"
+                        onclick="addToCart('Fish Steak', 27)">
+                        Order Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- DESSERTS -->
+
+        <div class="category">
+
+            <img src="images/deserts.jpg" alt="Desserts">
+
+            <div class="category-content">
+
+                <h2>Desserts</h2>
+
+                <div class="food">
+
+                    <div>
+                        <h3>Chocolate Cake</h3>
+                        <p>Rich chocolate cake</p>
+                    </div>
+
+                    <strong>$12</strong>
+
+                    <button
+                        class="order-btn"
+                        onclick="addToCart('Chocolate Cake', 12)">
+                        Order Now
+                    </button>
+
+                </div>
+
+
+                <div class="food">
+
+                    <div>
+                        <h3>Cheese Cake</h3>
+                        <p>Classic creamy cheesecake</p>
+                    </div>
+
+                    <strong>$13</strong>
+
+                    <button
+                        class="order-btn"
+                        onclick="addToCart('Cheese Cake', 13)">
+                        Order Now
+                    </button>
+
+                </div>
+
+
+                <div class="food">
+
+                    <div>
+                        <h3>Ice Cream</h3>
+                        <p>Fresh creamy ice cream</p>
+                    </div>
+
+                    <strong>$10</strong>
+
+                    <button
+                        class="order-btn"
+                        onclick="addToCart('Ice Cream', 10)">
+                        Order Now
+                    </button>
+
+                </div>
+
+
+                <div class="food">
+
+                    <div>
+                        <h3>Orange Tart</h3>
+                        <p>Fresh orange tart</p>
+                    </div>
+
+                    <strong>$11</strong>
+
+                    <button
+                        class="order-btn"
+                        onclick="addToCart('Orange Tart', 11)">
+                        Order Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SIGNATURE DISHES ================= -->
+
+    <section class="signature">
+
+        <p class="small-title">Something new</p>
+
+        <h2>Our Signature Dishes</h2>
+
+        <div class="signature-grid">
+
+
+            <div class="signature-card">
+
+                <img src="images/sig_1.jpg" alt="Signature Dish">
+
+                <div>
+
+                    <h3>Special Seafood Plate</h3>
+
+                    <p>Fresh seafood with vegetables</p>
+
+                    <strong>$28</strong>
+
+                    <button
+                        onclick="addToCart('Special Seafood Plate', 28)">
+                        Order Now
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="signature-card">
+
+                <img src="images/sig_2.jpg" alt="Signature Dish">
+
+                <div>
+
+                    <h3>Grilled Salmon</h3>
+
+                    <p>Salmon served with fresh vegetables</p>
+
+                    <strong>$25</strong>
+
+                    <button
+                        onclick="addToCart('Signature Grilled Salmon', 25)">
+                        Order Now
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="signature-card">
+
+                <img src="images/sig_3.jpg" alt="Signature Dish">
+
+                <div>
+
+                    <h3>Chef Special</h3>
+
+                    <p>Our chef's special seafood dish</p>
+
+                    <strong>$30</strong>
+
+                    <button
+                        onclick="addToCart('Chef Special', 30)">
+                        Order Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+        <!-- ================= RESERVATION ================= -->
+        <section class="reservation" id="resSection">
+            <div class="reservation-overlay">
+                <h2>Make a Reservation</h2>
+
+                <form id="reservationForm" novalidate>
+                    <div class="reservation-fields">
+                        <div class="field">
+                            <label for="date">Date</label>
+                            <input type="date" id="date">
+                        </div>
+                        <div class="field">
+                            <label for="time">Time</label>
+                            <input type="time" id="time">
+                        </div>
+                        <div class="field">
+                            <label for="guests">Guests</label>
+                            <select id="guests">
+                                <option value="">Select Guests</option>
+                                <option value="1 Person">1 Person</option>
+                                <option value="2 Persons" selected>2 Persons</option>
+                                <option value="3 Persons">3 Persons</option>
+                                <option value="4 Persons">4 Persons</option>
+                                <option value="5 Persons">5 Persons</option>
+                                <option value="6+ Persons">6+ Persons</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="reserve-btn">Book a Table</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- ================= RESERVATION POPUP ================= -->
+        <div class="reservation-popup" id="reservationPopup">
+            <div class="reservation-popup-box">
+                <button class="close-reservation" onclick="closeReservation()">&times;</button>
+                <div class="success-icon">&#10003;</div>
+                <h2>Reservation Confirmed!</h2>
+                <p>Thank you for choosing The Venue. We look forward to serving you.</p>
+                <div class="reservation-details">
+                    <p><strong>Date:</strong> <span id="confirmedDate">-</span></p>
+                    <p><strong>Time:</strong> <span id="confirmedTime">-</span></p>
+                    <p><strong>Guests:</strong> <span id="confirmedGuests">-</span></p>
+                </div>
+                <button class="reservation-ok" onclick="closeReservation()">OK</button>
+            </div>
+        </div>
+
+        <!-- ================= FOOTER ================= -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Footer Logo & Copyright -->
+                    <div class="col-lg-3 col-md-6 footer_col">
+                        <div class="footer_logo">
+                            <div class="footer_logo_title">The Venue</div>
+                            <div class="footer_logo_subtitle">
+                                <i>R</i><i>E</i><i>S</i><i>T</i><i>A</i><i>U</i><i>R</i><i>A</i><i>N</i><i>T</i>
+                            </div>
+                        </div>
+                        <div class="copyright">
+                            <p>Copyright &copy; <span id="year"></span> All rights reserved | This template is made by
+                                <a href="#">our team</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Footer About -->
+                    <div class="col-lg-6 col-md-6 footer_col">
+                        <div class="footer_about">
+                            <p>At The Venue, every meal is an opportunity to gather, connect, and savor exceptional food made with locally sourced produce. Whether it’s an intimate dinner or a weekend celebration, we look forward to welcoming you to our table.</p>
+                        </div>
+                    </div>
+
+                    <!-- Footer Contact -->
+                    <div class="col-lg-3 col-md-12 footer_col">
+                        <div class="footer_contact">
+                            <ul>
+                                <li>
+                                    <div class="footer_contact_title">Address:</div>
+                                    <div class="footer_contact_text">481 Creekside Lane Avila CA 93424</div>
+                                </li>
+                                <li>
+                                    <div class="footer_contact_title">Phone:</div>
+                                    <div class="footer_contact_text">+53 345 7953 32453</div>
+                                </li>
+                                <li>
+                                    <div class="footer_contact_title">Email:</div>
+                                    <div class="footer_contact_text">yourmail@gmail.com</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- ================= CART POPUP ================= -->
+    <div id="cart" class="cart-popup">
+        <div class="cart-container">
+            <button class="close-cart" onclick="closeCart()">×</button>
+            <h2>Shopping Cart</h2>
+            <div id="cartItems"></div>
+            <div class="cart-total">
+                <strong>Total: $<span id="cartTotal">0</span></strong>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="navbar.js"></script>
+    <script src="menu.js"></script>
+
+</body>
+
+</html>

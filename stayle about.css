@@ -1,0 +1,465 @@
+#mainNav {
+  padding: 28px 0;
+  background-color: transparent;
+  transition: background-color 0.4s ease, padding 0.4s ease;
+}
+
+#mainNav.scrolled {
+  background-color: rgba(0, 0, 0, 0.82);
+  padding: 16px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#mainNav.scrolled .navbar-brand {
+  font-size: 1.5rem;
+}
+
+#mainNav.scrolled .brand-sub {
+  font-size: 0.6rem;
+}
+
+.navbar-brand {
+  color: #fff !important;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.15;
+  display: flex;
+  flex-direction: column;
+  transition: font-size 0.4s ease;
+}
+
+.brand-sub {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #eee;
+  margin-top: 3px;
+  transition: font-size 0.4s ease;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 8px 16px !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #c99a6c !important;
+}
+
+.btn-outline-reservation {
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 0;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-reservation:hover {
+  background-color: #fff;
+  color: #1a1a1a;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: rgba(26, 26, 26, 0.98);
+    padding: 20px;
+    margin-top: 15px;
+  }
+
+  .btn-outline-reservation {
+    display: inline-block;
+    margin-top: 15px;
+  }
+}
+
+.about-hero-banner {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.banner-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.banner-inner {
+  position: relative;
+  z-index: 2;
+}
+
+.banner-script {
+  display: block;
+  font-family: 'Alex Brush', cursive;
+  font-size: 34px;
+  color: #cbb49f;
+  margin-bottom: 5px;
+}
+
+.banner-heading {
+  font-family: Arial, sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  color: #ffffff;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .about-hero-banner {
+    height: 380px;
+  }
+
+  .banner-script {
+    font-size: 28px;
+  }
+
+  .banner-heading {
+    font-size: 36px;
+  }
+}
+
+.experience-section {
+  padding: 100px 20px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.experience-container {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.experience-image-wrapper {
+  width: 65%;
+}
+
+.experience-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.experience-card {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  background: #ffffff;
+  padding: 50px 45px;
+  border: 1px solid #e8e2dc;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  z-index: 2;
+}
+
+.experience-badge {
+  display: inline-block;
+  background-color: #dfd4ca;
+  color: #ffffff;
+  font-family: 'Alex Brush', cursive;
+  font-size: 24px;
+  padding: 4px 16px;
+  margin-bottom: 20px;
+}
+
+.experience-title {
+  font-family: 'Times New Roman', Georgia, serif;
+  font-size: 38px;
+  color: #232323;
+  line-height: 1.25;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.experience-desc {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #777777;
+  line-height: 1.9;
+  margin-bottom: 15px;
+}
+
+.experience-desc:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 850px) {
+  .experience-container {
+    flex-direction: column;
+  }
+
+  .experience-image-wrapper {
+    width: 100%;
+  }
+
+  .experience-card {
+    position: static;
+    width: 100%;
+    margin-top: -30px;
+    padding: 30px 20px;
+  }
+
+  .experience-title {
+    font-size: 28px;
+  }
+}
+
+.chefs-section {
+  padding: 90px 20px 80px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.chefs-container {
+  max-width: 1140px;
+  width: 100%;
+}
+
+.chefs-top {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 55px;
+  width: 100%;
+}
+
+.chefs-title-box {
+  margin-bottom: 30px;
+}
+
+.chefs-subtitle {
+  display: block;
+  font-family: 'Alex Brush', cursive;
+  font-size: 28px;
+  color: #cbb49f;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.chefs-title {
+  font-family: Arial, sans-serif;
+  font-size: 42px;
+  font-weight: 300;
+  color: #1a1a1a;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.chefs-text-cols {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+}
+
+.chefs-text-cols p {
+  flex: 1;
+  font-family: Arial, sans-serif;
+  font-size: 13.5px;
+  font-weight: 400;
+  color: #6a6a6a;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.chefs-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.chef-card {
+  flex: 1;
+  text-align: center;
+}
+
+.chef-img-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.chef-img-box img {
+  width: 100%;
+  max-height: 380px;
+  object-fit: contain;
+  display: block;
+}
+
+.chef-name {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 18px;
+  color: #232323;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.chef-role {
+  display: block;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: #888888;
+  margin-bottom: 18px;
+}
+
+.chef-btn {
+  display: inline-block;
+  background-color: #c9b4a4;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  padding: 10px 22px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.chef-btn:hover {
+  background-color: #b59f8e;
+}
+
+@media (max-width: 900px) {
+  .chefs-top {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .chefs-title-box,
+  .chefs-text-cols {
+    flex: 0 0 100%;
+  }
+
+  .chefs-grid {
+    flex-wrap: wrap;
+  }
+
+  .chef-card {
+    flex: 0 0 48%;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  .chefs-text-cols {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .chef-card {
+    flex: 0 0 100%;
+  }
+}
+
+.testimonials-section {
+  width: 100%;
+  padding: 130px 20px;
+  background-image: url('photo/testimonials.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonials-container {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.testimonials-subtitle {
+  display: block;
+  font-family: 'Alex Brush', cursive;
+  font-size: 30px;
+  color: #cbb49f;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.testimonials-title {
+  font-family: Arial, sans-serif;
+  font-size: 42px;
+  font-weight: 300;
+  color: #1a1a1a;
+  letter-spacing: -0.5px;
+  margin-bottom: 25px;
+}
+
+.testimonials-quote-mark {
+  font-family: Georgia, serif;
+  font-size: 34px;
+  line-height: 1;
+  color: #cbb49f;
+  margin-bottom: 20px;
+}
+
+.testimonials-text {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #6a6a6a;
+  line-height: 2;
+  margin-bottom: 30px;
+}
+
+.testimonials-author {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #232323;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .testimonials-section {
+    padding: 80px 15px;
+  }
+  
+  .testimonials-title {
+    font-size: 32px;
+  }
+
+  .testimonials-text {
+    font-size: 12.5px;
+    line-height: 1.8;
+  }
+}
